@@ -4,12 +4,43 @@
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcionario</title>
+    <title>Document</title>
 </head>
 <body>
     <div id="geral">
-        <img id="logo" src="./37605-removebg-preview.png">
-    </div>
+    <img id="logo" src="./37605-removebg-preview.png">
     
+    <h1 id="mensagem-boas-vindas"></h1>
+
+    <hr> <h2>Registrar Novo Atendimento</h2>
+
+    <form id="form-atendimento">
+        <div class="form-group">
+            <label for="servico">Tipo de Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="">-- Escolha um serviço --</option>
+                <option value="corte">Corte de Cabelo</option>
+                <option value="barba">Barba Terapia</option>
+                <option value="combo">Combo (Cabelo + Barba)</option>
+                <option value="pezinho">Pezinho</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="data">Data do Atendimento:</label>
+            <input type="date" id="data" name="data" required>
+        </div>
+
+        <div class="form-group">
+            <label for="observacoes">Observações (opcional):</label>
+            <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="button">Registrar</button>
+    </form>
+    </div>
+
+<script src="./js/dashboard.js" defer></script>
+</body>
 </body>
 </html>
